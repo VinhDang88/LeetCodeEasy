@@ -1,0 +1,15 @@
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\bin\Debug\net6.0\LeetCodeEasy.exe
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\bin\Debug\net6.0\LeetCodeEasy.deps.json
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\bin\Debug\net6.0\LeetCodeEasy.runtimeconfig.json
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\bin\Debug\net6.0\LeetCodeEasy.dll
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\bin\Debug\net6.0\LeetCodeEasy.pdb
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.csproj.AssemblyReference.cache
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.AssemblyInfoInputs.cache
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.AssemblyInfo.cs
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.csproj.CoreCompileInputs.cache
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.dll
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\refint\LeetCodeEasy.dll
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.pdb
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\LeetCodeEasy.genruntimeconfig.cache
+C:\Users\vinnn\source\repos\LeetCodeEasy\LeetCodeEasy\obj\Debug\net6.0\ref\LeetCodeEasy.dll
