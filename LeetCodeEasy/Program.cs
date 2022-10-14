@@ -83,6 +83,47 @@ namespace Application
                 return set.First();
                 //return list[0];
             }
+            List<int> number1 = new List<int> { 3, 2 };
+            List<int> numbers2 = new List<int> { 5, 5 };
+            List<int> number3 = new List<int>();
+            //numbers2 = number1.ToList();
+            
+
+            foreach(int i in number1)
+            {
+                numbers2.Add(i);
+            }
+            number3 = numbers2.OrderBy(x => x).ToList();
+            number3.ForEach(x => Console.WriteLine(x));
+
+            string Reverse(string text)
+            {
+                char[] cArray = text.ToCharArray();
+                string reverse = "";
+                for (int i = cArray.Length-1; i > 0; i--)
+                {
+                    reverse += cArray[i];
+                }
+                return reverse;
+            }
+            Console.WriteLine(Reverse("hello"));
+
+            string word = "hello";
+            Console.WriteLine(word.Length);
+            string reverse = "";
+
+            for(int i = word.Length-1 ; i > 0; i--)
+            {
+                reverse += word[i];
+            }
+            Console.WriteLine(reverse);
+            for(int i = 4; i >= 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+
+
         }
     }
 }
