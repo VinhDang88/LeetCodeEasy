@@ -71,31 +71,16 @@ namespace Application
                     //if (list.Contains(i)) //if the number appears in our list we can remove it
                     //{
                     //   list.Remove(i);
-                    //    goodcounter++;
                     //}
                     //else if (!list.Contains(i)) //if the number isnt in our list we'll add it
                     //{
                     //    list.Add(i);
-                    //    counter++;
                     //}
                     // 2 is now inside the list, we will now remove 2, now we add one
                 }
                 return set.First();
                 //return list[0];
             }
-            List<int> number1 = new List<int> { 3, 2 };
-            List<int> numbers2 = new List<int> { 5, 5 };
-            List<int> number3 = new List<int>();
-            //numbers2 = number1.ToList();
-            
-
-            foreach(int i in number1)
-            {
-                numbers2.Add(i);
-            }
-            number3 = numbers2.OrderBy(x => x).ToList();
-            number3.ForEach(x => Console.WriteLine(x));
-
             string Reverse(string text)
             {
                 char[] cArray = text.ToCharArray();
@@ -106,23 +91,121 @@ namespace Application
                 }
                 return reverse;
             }
-            Console.WriteLine(Reverse("hello"));
-
-            string word = "hello";
-            Console.WriteLine(word.Length);
-            string reverse = "";
-
-            for(int i = word.Length-1 ; i > 0; i--)
+            string ReverseEasy(string text)
             {
-                reverse += word[i];
+                string reverse = "";
+                for (int i = text.Length - 1; i >= 0; i--)
+                {
+                    reverse += text[i];
+                }
+                return reverse;
             }
-            Console.WriteLine(reverse);
-            for(int i = 4; i >= 0; i--)
+            void FindFibonacci(int findFib)
             {
-                Console.WriteLine(i);
+                int previous = 1;
+                int previous2 = 0;
+
+                for (int i = 2; i <= findFib; i++)
+                {
+                    int temp = previous;
+                    previous = previous + previous2;
+                    previous2 = temp;
+
+                    //int temp = previous + previous2;
+                    //previous2 = previous;
+                    //previous = temp;
+
+                    Console.WriteLine(previous + previous2);
+                }
+            }
+            int AddEvenFibonacci(int findFib)
+            {
+                int previous = 1;
+                int previous2 = 0;
+                int sum = 0;
+
+                for (int i = 2; i <= findFib; i++)
+                {
+                    int temp = previous;
+                    previous = previous + previous2;
+                    previous2 = temp;
+
+                    if (previous % 2 == 0)
+                    {
+                        sum += previous;
+                    }
+                }
+                return sum;
             }
 
+            void PrimeNumber()
+            {
+                int number = 20;
+                int newnumber;
+                for(int i = 2; i<= number; i++)
+                {
+                    if(number%i == 0)
+                    {
+                        newnumber = i;
+                        int counter = 0;
+                        for(int j = newnumber; j>=2; j--)
+                        {
+                            if(newnumber % j == 0)
+                            {
+                                counter++;
+                            }
+                        }
+                        if(counter == 1)
+                        {
+                            Console.WriteLine(newnumber);
+                        }
+                    }
+                }
+            }
+            PrimeNumber();
 
+            for (int i = 2; i <= 50; i++)
+            {
+                    int counter = 0;
+
+                    for (int j = 2; j <= 50; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            counter++;
+                        }
+                    }
+                    if (counter == 1 && i > 25)
+                    {
+                        Console.WriteLine(i);
+                    }
+            }
+
+            void PrimeNumber2()
+            {
+                int number = 20;
+                int newnumber;
+                for (int i = 2; i <= number; i++)
+                {
+                    if (number % i == 0)
+                    {
+                        newnumber = i;
+                        int counter = 0;
+                        for (int j = 2; j <= newnumber; j++)
+                        {
+                            if (i % j == 0)
+                            {
+                                counter++;
+                            }
+                        }
+                        if (counter == 1)
+                        {
+                            Console.WriteLine(newnumber);
+                        }
+                    }
+                }
+            }
+            PrimeNumber2();
 
         }
     }
