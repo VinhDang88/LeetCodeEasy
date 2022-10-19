@@ -137,7 +137,6 @@ namespace Application
                 }
                 return sum;
             }
-
             void PrimeNumber()
             {
                 int number = 20;
@@ -162,25 +161,6 @@ namespace Application
                     }
                 }
             }
-            PrimeNumber();
-
-            for (int i = 2; i <= 50; i++)
-            {
-                    int counter = 0;
-
-                    for (int j = 2; j <= 50; j++)
-                    {
-                        if (i % j == 0)
-                        {
-                            counter++;
-                        }
-                    }
-                    if (counter == 1 && i > 25)
-                    {
-                        Console.WriteLine(i);
-                    }
-            }
-
             void PrimeNumber2()
             {
                 int number = 20;
@@ -205,7 +185,39 @@ namespace Application
                     }
                 }
             }
-            PrimeNumber2();
+
+            for (int i = 2; i <= 50; i++)
+            {
+                    int counter = 0;
+
+                    for (int j = 2; j <= 50; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            counter++;
+                        }
+                    }
+                    if (counter == 1 && i > 25)
+                    {
+                        Console.WriteLine(i);
+                    }
+            }
+
+            string strFirst;
+            char charCout;
+            int Count = 0;
+            Console.Write("Enter Your String:");
+            strFirst = Console.ReadLine();
+            Console.Write("Enter Count Character:");
+            charCout = Convert.ToChar(Console.ReadLine());
+            Console.Write("Your Character Count:");
+            foreach (char chr in strFirst)
+            {
+                if (chr == charCout)
+                {
+                    Count++;
+                }
+            }
 
         }
     }
