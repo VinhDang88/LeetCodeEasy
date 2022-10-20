@@ -203,20 +203,57 @@ namespace Application
                     }
             }
 
-            string strFirst;
-            char charCout;
-            int Count = 0;
-            Console.Write("Enter Your String:");
-            strFirst = Console.ReadLine();
-            Console.Write("Enter Count Character:");
-            charCout = Convert.ToChar(Console.ReadLine());
-            Console.Write("Your Character Count:");
-            foreach (char chr in strFirst)
+            //int height = int.Parse(Console.ReadLine());
+            //int width = int.Parse(Console.ReadLine());
+            //string material = Console.ReadLine();
+
+
+            //var row = new String(material[0], width);
+            //foreach (var i in Enumerable.Range(0, height))
+            //    Console.WriteLine(row);
+
+
+            //Find the maxiumum value of string array and divide that by the minimum value.
+
+            //mara//
+
+            string input = "3 5 7 2 10";
+            string[] words = input.Split(' ');
+            int max = 0;
+            int min = 1000; //this is assuming we're not dealing with huge numbers, not sure how to set it up otherwise at the moment but whatever
+            int[] numbas;
+            List<int> numbaa = new List<int>();
+
+            for (var i = 0; i < words.Length; i++)
             {
-                if (chr == charCout)
-                {
-                    Count++;
-                }
+                int currentNumber = Int32.Parse(words[i]);
+                Console.WriteLine(currentNumber);
+                numbaa.Add(currentNumber);
+
+                //if (currentNumber < min)
+                //{
+                //    min = currentNumber;
+                //}
+                //if (currentNumber > max)
+                //{
+                //    max = currentNumber;
+                //}
+              
+            }
+            
+
+            //Console.WriteLine($"Min number: {min}\nMax number: {max}\n Max/Min: {max/min}");
+
+            Console.WriteLine(numbaa.Max() / numbaa.Min());
+            Console.WriteLine(numbaa.Min());
+
+
+
+            foreach(var word in words)
+            {
+                int currentNumber = Int32.Parse(word);
+                //Console.WriteLine(currentNumber);
+                Console.WriteLine(Math.Max(currentNumber, 0));
             }
 
         }
