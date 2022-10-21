@@ -256,6 +256,21 @@ namespace Application
                 Console.WriteLine(Math.Max(currentNumber, 0));
             }
 
+
+            //SODUKU PROBLEM
+            string b = "12345?789";
+            string k = "123456789?";
+            char[] letters = k.ToCharArray();
+
+            for(int i = 0; i < letters.Length; i++)
+            {
+
+                    if (!b.Contains(letters[i]))
+                    {
+                        Console.WriteLine(letters[i]);
+                    }
+            }
+
         }
     }
 }
