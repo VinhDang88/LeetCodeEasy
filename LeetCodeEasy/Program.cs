@@ -221,7 +221,6 @@ namespace Application
             string[] words = input.Split(' ');
             int max = 0;
             int min = 1000; //this is assuming we're not dealing with huge numbers, not sure how to set it up otherwise at the moment but whatever
-            int[] numbas;
             List<int> numbaa = new List<int>();
 
             for (var i = 0; i < words.Length; i++)
@@ -238,24 +237,10 @@ namespace Application
                 //{
                 //    max = currentNumber;
                 //}
-              
             }
-            
-
             //Console.WriteLine($"Min number: {min}\nMax number: {max}\n Max/Min: {max/min}");
-
             Console.WriteLine(numbaa.Max() / numbaa.Min());
             Console.WriteLine(numbaa.Min());
-
-
-
-            foreach(var word in words)
-            {
-                int currentNumber = Int32.Parse(word);
-                //Console.WriteLine(currentNumber);
-                Console.WriteLine(Math.Max(currentNumber, 0));
-            }
-
 
             //SODUKU PROBLEM
             string b = "12345?789";
@@ -264,11 +249,23 @@ namespace Application
 
             for(int i = 0; i < letters.Length; i++)
             {
+                if (!b.Contains(letters[i]))
+                {
+                    Console.WriteLine(letters[i]);
+                }
+            }
 
-                    if (!b.Contains(letters[i]))
-                    {
-                        Console.WriteLine(letters[i]);
-                    }
+            string Text = "1 One, 2 Two, 3 Three is good.";
+
+            string[] digits = Regex.Split(Text, @"\D+");
+
+            foreach (string value in digits)
+            {
+                int number;
+                if (int.TryParse(value, out number))
+                {
+                    Console.WriteLine(value);
+                }
             }
 
         }
