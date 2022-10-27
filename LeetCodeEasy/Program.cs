@@ -268,6 +268,18 @@ namespace Application
                 }
             }
 
+            string str = "Icecream";
+            char[] result;
+
+            // copies 4 chars from index 3 of str
+            result = str.ToCharArray(3, 4);
+
+            // prints result
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+
         }
     }
 }
