@@ -15,7 +15,7 @@
 
 namespace Application
 {
-   class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -51,7 +51,7 @@ namespace Application
             //}
             //Console.WriteLine(level);
 
-            int[] ints = {2,2,1,3,3,4};
+            int[] ints = { 2, 2, 1, 3, 3, 4 };
 
             int FindOne(int[] ints) //the idea here is that if the number appears twice we can add it and then remove it right after
             {
@@ -60,7 +60,7 @@ namespace Application
                 List<int> list = new List<int>();
                 HashSet<int> set = new HashSet<int>();
 
-                foreach(int i in ints)
+                foreach (int i in ints)
                 {
 
                     if (!set.Add(i))
@@ -85,7 +85,7 @@ namespace Application
             {
                 char[] cArray = text.ToCharArray();
                 string reverse = "";
-                for (int i = cArray.Length-1; i > 0; i--)
+                for (int i = cArray.Length - 1; i > 0; i--)
                 {
                     reverse += cArray[i];
                 }
@@ -141,20 +141,20 @@ namespace Application
             {
                 int number = 20;
                 int newnumber;
-                for(int i = 2; i<= number; i++)
+                for (int i = 2; i <= number; i++)
                 {
-                    if(number%i == 0)
+                    if (number % i == 0)
                     {
                         newnumber = i;
                         int counter = 0;
-                        for(int j = newnumber; j>=2; j--)
+                        for (int j = newnumber; j >= 2; j--)
                         {
-                            if(newnumber % j == 0)
+                            if (newnumber % j == 0)
                             {
                                 counter++;
                             }
                         }
-                        if(counter == 1)
+                        if (counter == 1)
                         {
                             Console.WriteLine(newnumber);
                         }
@@ -188,19 +188,19 @@ namespace Application
 
             for (int i = 2; i <= 50; i++)
             {
-                    int counter = 0;
+                int counter = 0;
 
-                    for (int j = 2; j <= 50; j++)
+                for (int j = 2; j <= 50; j++)
+                {
+                    if (i % j == 0)
                     {
-                        if (i % j == 0)
-                        {
-                            counter++;
-                        }
+                        counter++;
                     }
-                    if (counter == 1 && i > 25)
-                    {
-                        Console.WriteLine(i);
-                    }
+                }
+                if (counter == 1 && i > 25)
+                {
+                    Console.WriteLine(i);
+                }
             }
 
             //int height = int.Parse(Console.ReadLine());
@@ -247,7 +247,7 @@ namespace Application
             string k = "123456789?";
             char[] letters = k.ToCharArray();
 
-            for(int i = 0; i < letters.Length; i++)
+            for (int i = 0; i < letters.Length; i++)
             {
                 if (!b.Contains(letters[i]))
                 {
@@ -255,18 +255,18 @@ namespace Application
                 }
             }
 
-            string Text = "1 One, 2 Two, 3 Three is good.";
+            //string Text = "1 One, 2 Two, 3 Three is good.";
 
-            string[] digits = Regex.Split(Text, @"\D+");
+            //string[] digits = Regex.Split(Text, @"\D+");
 
-            foreach (string value in digits)
-            {
-                int number;
-                if (int.TryParse(value, out number))
-                {
-                    Console.WriteLine(value);
-                }
-            }
+            //foreach (string value in digits)
+            //{
+            //    int number;
+            //    if (int.TryParse(value, out number))
+            //    {
+            //        Console.WriteLine(value);
+            //    }
+            //}
 
             string str = "Icecream";
             char[] result;
@@ -279,6 +279,27 @@ namespace Application
             {
                 Console.WriteLine(result[i]);
             }
+
+            string RemoveSpecialChars(string str)
+            {
+                // Create  a string array and add the special characters you want to remove
+
+                string[] chars = new string[] { ",", ".", "/", "!", "@", "#", "$", "%", "^", "&", "*", "'", "\"", ";", "_", "(", ")", ":", "|", "[", "]" };
+                //Iterate the number of times based on the String array length.
+
+                for(int i = 0; i <chars.Length; i++)
+                {
+                    if (str.Contains(chars[i]))
+                    {
+                        str = str.Replace(chars[i],"");
+                    }
+                }
+               return str;
+
+            }
+            string strs = "$['Money']";
+            string noSpecialcharacters = RemoveSpecialChars(strs);
+            Console.WriteLine(noSpecialcharacters);
 
         }
     }
