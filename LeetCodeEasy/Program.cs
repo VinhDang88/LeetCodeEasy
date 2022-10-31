@@ -301,6 +301,28 @@ namespace Application
             string noSpecialcharacters = RemoveSpecialChars(strs);
             Console.WriteLine(noSpecialcharacters);
 
+            var vals = new int[] { 1, 2, 3, 4, 5 };
+
+            ModifyArray(vals);
+
+            Console.WriteLine(string.Join(", ", vals));
+
+            void ModifyArray(int[] data)
+            {
+                Array.Reverse(data);
+            }
+
+            string[] names = { "Jane", "Frank", "Alice", "Tom" };
+            string[] names2 = new string[4];
+
+            Array.Copy(names, names2, names.Length);
+
+            Console.WriteLine(string.Join(", ", names2));
+
+            Array.Clear(names2);
+
+            Console.WriteLine(string.Join(", ", names2));
+
         }
     }
 }
