@@ -323,6 +323,26 @@ namespace Application
 
             Console.WriteLine(string.Join(", ", names2));
 
+            int g = 123;
+            object o = g;    // Boxing
+            Console.WriteLine(o);
+
+            string text5 = "racecar";
+            string reverse2 = "";
+            for (int i = 0; i <= text5.Length -1; i++)
+            {
+                Console.WriteLine(text5[i]);
+            }
+            for (int i = text5.Length - 1; i >= 0; i--)
+            {
+                reverse2 += text5[i];
+            }
+
+            if(reverse2 == text5)
+            {
+                Console.WriteLine("palidnrome");
+            }
+
         }
     }
 }
