@@ -34,5 +34,12 @@ namespace LeetCodeEasy
             return s;
         }
 
+        public string MonthStringss(int Month)
+        {
+            string s = "";
+            s = Month.ToString();
+            return s;
+        }
+
     }
 }

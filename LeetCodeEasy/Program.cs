@@ -203,17 +203,7 @@ namespace Application
                 {
                     Console.WriteLine(i);
                 }
-            }
-
-            //int height = int.Parse(Console.ReadLine());
-            //int width = int.Parse(Console.ReadLine());
-            //string material = Console.ReadLine();
-
-
-            //var row = new String(material[0], width);
-            //foreach (var i in Enumerable.Range(0, height))
-            //    Console.WriteLine(row);
-
+            }    
 
             //Find the maxiumum value of string array and divide that by the minimum value.
 
@@ -256,32 +246,7 @@ namespace Application
                     Console.WriteLine(letters[i]);
                 }
             }
-
-            //string Text = "1 One, 2 Two, 3 Three is good.";
-
-            //string[] digits = Regex.Split(Text, @"\D+");
-
-            //foreach (string value in digits)
-            //{
-            //    int number;
-            //    if (int.TryParse(value, out number))
-            //    {
-            //        Console.WriteLine(value);
-            //    }
-            //}
-
-            string str = "Icecream";
-            char[] result;
-
-            // copies 4 chars from index 3 of str
-            result = str.ToCharArray(3, 4);
-
-            // prints result
-            for (int i = 0; i < result.Length; i++)
-            {
-                Console.WriteLine(result[i]);
-            }
-
+          
             string RemoveSpecialChars(string str)
             {
                 // Create  a string array and add the special characters you want to remove
@@ -303,32 +268,6 @@ namespace Application
             string noSpecialcharacters = RemoveSpecialChars(strs);
             Console.WriteLine(noSpecialcharacters);
 
-            var vals = new int[] { 1, 2, 3, 4, 5 };
-
-            ModifyArray(vals);
-
-            Console.WriteLine(string.Join(", ", vals));
-
-            void ModifyArray(int[] data)
-            {
-                Array.Reverse(data);
-            }
-
-            string[] names = { "Jane", "Frank", "Alice", "Tom" };
-            string[] names2 = new string[4];
-
-            Array.Copy(names, names2, names.Length);
-
-            Console.WriteLine(string.Join(", ", names2));
-
-            Array.Clear(names2);
-
-            Console.WriteLine(string.Join(", ", names2));
-
-            int g = 123;
-            object o = g;    // Boxing
-            Console.WriteLine(o);
-
             string text5 = "racecar";
             string reverse2 = "";
             for (int i = 0; i <= text5.Length -1; i++)
@@ -345,25 +284,15 @@ namespace Application
                 Console.WriteLine("palidnrome");
             }
 
-            Person p = new Person();
-            p.Month = 11;
-            Console.WriteLine(p.Month);
-            Console.WriteLine(Person.Name);
-            Person.MonthString(10);
-            Console.WriteLine(Person.MonthString(15));
+            // A long string    
+            string bio = "Mahesh Chand is a CEO";
 
-            int ze = 2;
-            int yz = 3;
+            // Get first 12 characters substring from a string    
+            string authorName = bio.Substring(0, 12);
+            Console.WriteLine(authorName);
 
-            static void Add(ref int x, ref int y, out int total)
-            {
-                int totals = 3 + x + y;
-                total = x + y;
-                Console.WriteLine(totals);
-            }
-
-            Add(ref ze, ref yz, out int totals);
-            Console.WriteLine(totals);
+            string authorBio = bio.Substring(12);
+            Console.WriteLine(authorBio);
 
         }
     }
