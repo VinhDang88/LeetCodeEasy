@@ -1,5 +1,7 @@
 ﻿
-  public class TreeNode
+using LeetCodeEasy;
+
+public class TreeNode
   {
       public int val;
       public TreeNode left;
@@ -342,6 +344,26 @@ namespace Application
             {
                 Console.WriteLine("palidnrome");
             }
+
+            Person p = new Person();
+            p.Month = 11;
+            Console.WriteLine(p.Month);
+            Console.WriteLine(Person.Name);
+            Person.MonthString(10);
+            Console.WriteLine(Person.MonthString(15));
+
+            int ze = 2;
+            int yz = 3;
+
+            static void Add(ref int x, ref int y, out int total)
+            {
+                int totals = 3 + x + y;
+                total = x + y;
+                Console.WriteLine(totals);
+            }
+
+            Add(ref ze, ref yz, out int totals);
+            Console.WriteLine(totals);
 
         }
     }
