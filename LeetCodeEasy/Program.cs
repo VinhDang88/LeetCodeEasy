@@ -294,6 +294,71 @@ namespace Application
             string authorBio = bio.Substring(12);
             Console.WriteLine(authorBio);
 
+            //Console.WriteLine("Enter a number");
+
+            //string input1 = Console.ReadLine();
+
+            //try
+            //{
+            //int t = int.Parse(input1);
+
+            //}
+            //catch
+            //{
+            //    Console.WriteLine(0);
+            //}
+
+            //int bigNumber = 678;
+            //var mult = 1;
+            //string[] splitStr = bigNumber.ToString().Split("");
+            //Console.WriteLine(splitStr);
+
+            //foreach(string str in splitStr)
+            //{
+            //    Console.WriteLine(str);
+            //    mult *= int.Parse(str);
+            //}
+            //Console.WriteLine(mult);
+
+            //int bigNumber = 678;
+            //string phrase = bigNumber.ToString();
+            //List<int> fThis = new List<int>();
+            //foreach (char c in phrase)
+            //{
+            //    fThis.Add(c);
+            //    Console.WriteLine(c);
+            //}
+
+            
+            //int multiply = 1;
+
+            //for(int i = 0; i< fThis.Count; i++)
+            //{
+            //    Console.WriteLine(fThis[i]);
+            //    multiply *= fThis[i];
+            //    Console.WriteLine(multiply);
+            //}
+            //Console.WriteLine(multiply);
+
+
+            //for (int i = 0; i < fThis.Length; i++)
+            //{
+            //    Console.WriteLine(fThis[i]);
+            //    multiply *= fThis[i];
+            //    Console.WriteLine(multiply);
+            //}
+            //Console.WriteLine(multiply);
+
+            List<int> thisDumb = new List<int> { 6, 7, 8 };
+            int multiplyx = 1;
+            foreach(int x in thisDumb)
+            {
+                multiplyx *= x;
+                Console.WriteLine(x);
+            }
+            Console.WriteLine(multiplyx);
+
+
         }
     }
 }
