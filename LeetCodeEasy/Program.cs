@@ -308,56 +308,37 @@ namespace Application
             //    Console.WriteLine(0);
             //}
 
-            //int bigNumber = 678;
-            //var mult = 1;
-            //string[] splitStr = bigNumber.ToString().Split("");
-            //Console.WriteLine(splitStr);
 
-            //foreach(string str in splitStr)
-            //{
-            //    Console.WriteLine(str);
-            //    mult *= int.Parse(str);
-            //}
-            //Console.WriteLine(mult);
-
-            //int bigNumber = 678;
-            //string phrase = bigNumber.ToString();
-            //List<int> fThis = new List<int>();
-            //foreach (char c in phrase)
-            //{
-            //    fThis.Add(c);
-            //    Console.WriteLine(c);
-            //}
-
-            
-            //int multiply = 1;
-
-            //for(int i = 0; i< fThis.Count; i++)
-            //{
-            //    Console.WriteLine(fThis[i]);
-            //    multiply *= fThis[i];
-            //    Console.WriteLine(multiply);
-            //}
-            //Console.WriteLine(multiply);
-
-
-            //for (int i = 0; i < fThis.Length; i++)
-            //{
-            //    Console.WriteLine(fThis[i]);
-            //    multiply *= fThis[i];
-            //    Console.WriteLine(multiply);
-            //}
-            //Console.WriteLine(multiply);
-
-            List<int> thisDumb = new List<int> { 6, 7, 8 };
-            int multiplyx = 1;
-            foreach(int x in thisDumb)
+            void FindPerfectSquare(int n)
             {
-                multiplyx *= x;
-                Console.WriteLine(x);
-            }
-            Console.WriteLine(multiplyx);
 
+                int squared = n * n;
+                string square = squared.ToString();
+                string empty = "";
+
+                for (int i = square.Length - 1; i > -1; i--)
+                {
+                    empty += square[i];
+                }
+
+                int news = int.Parse(empty);
+                double squarer = Math.Sqrt(news);
+                if (squarer % 1 != 0)
+                {
+                    Console.WriteLine("None");
+                }
+                else
+                {
+                    Console.WriteLine(squarer);
+                }
+
+            }
+
+            int[] inpux = { 1, 2, 5 };
+            for(int i = 0; i< 3; i++)
+            {
+                Console.WriteLine(inpux[i]);
+            }
 
         }
     }
