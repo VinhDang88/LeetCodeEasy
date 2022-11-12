@@ -334,11 +334,57 @@ namespace Application
 
             }
 
-            int[] inpux = { 1, 2, 5 };
-            for(int i = 0; i< 3; i++)
+            string numbs = "1234";
+            string[] numbers = numbs.Split(' ');
+            int prods = 1;
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine(inpux[i]);
+
+                Console.WriteLine(numbers[i]);
+
+                //prods *= int.Parse(numbers[i]);
+
+                //int numb = int.Parse(numbers[i]);
+                //Console.WriteLine(numb);
+                ////int number = Int32.Parse(numbers[i]);
+                ////prods *= number;
+
+                //if(numb == 1234)
+                //{
+                //    Console.WriteLine("True");
+                //}
+                //else
+                //{
+                //    Console.WriteLine("False");
+                //}
+                //prods += numb;
             }
+            //Console.WriteLine(prods);
+
+            foreach(char n in numbs)
+            {
+                int some = n - '0';
+                prods *= some;
+                
+            }
+            Console.WriteLine(prods);
+
+            char foo = '2';
+            int bar = foo - '1';
+            Console.WriteLine(bar);
+            if(bar == 2)
+            {
+                Console.WriteLine("True");
+            }
+
+            //int prod = 1;
+            //int newnumb;
+            //for(int i = 0; i<numbs.Length; i++)
+            //{
+            //    Console.WriteLine(numbs[i]);
+            //    int v = numbs[i];
+            //    Console.WriteLine(v);
+            //}
 
         }
     }
