@@ -386,6 +386,11 @@ namespace Application
             //    Console.WriteLine(v);
             //}
 
+
+            string[] stringArray = { "James", "Sachin", "Sourav", "Pam", "Sara" };
+            //Method Syntax
+            var ResultMS = stringArray.Any(name => name.Length > 5);
+
         }
     }
 }
