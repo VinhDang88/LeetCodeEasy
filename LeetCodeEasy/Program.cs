@@ -391,6 +391,14 @@ namespace Application
             //Method Syntax
             var ResultMS = stringArray.Any(name => name.Length > 5);
 
+
+            int[] intArray = new int[] { 10, 30, 50, 40, 60, 20, 70, 100 };
+            Console.WriteLine("Before Reverse the Data");
+            foreach (var number in intArray)
+            {
+                Console.Write(number + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
