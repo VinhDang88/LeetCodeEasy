@@ -415,6 +415,20 @@ namespace Application
             {
                 Console.Write($"{num} ");
             }
+
+            int[] IntArray = { 11, 22, 33, 44, 55 };
+            var Result = IntArray.All(x => x > 10);
+            Console.WriteLine("Is All Numbers are greater than 10 : " + Result);
+
+            List<int> intList = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //Method Syntax
+            IEnumerable<int> filteredData = intList.Where(num => num > 5);
+            foreach (int number in filteredData)
+            {
+                Console.WriteLine(number);
+            }
+
+
         }
     }
 }
